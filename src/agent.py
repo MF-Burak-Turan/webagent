@@ -9,7 +9,7 @@ class WebAgent:
     def __init__(self):
         self.llm = ChatOpenAI(
             base_url=os.getenv("OLLAMA_BASE_URL"),
-            api_key="ollama",
+            api_key=os.getenv("API_KEY"),
             model=os.getenv("MODEL_NAME"),
         )
         
