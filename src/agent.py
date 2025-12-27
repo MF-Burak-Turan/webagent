@@ -38,6 +38,7 @@ class WebAgent:
         3. Eğer 'title' (başlık) bilgisini bulamıyorsan o öğeyi listeye ekleme.
         4. Web sayfasındaki gürültüleri (menüler, footer, reklamlar) yoksay.
         5. Eğer kullanıcı belirli bir kriter (örn: 'stokta olanlar') verdiyse bu filtreye sadık kal.
+        6. Bu fiyatın {user_query} kriterine matematiksel olarak uyup uymadığını KONTROL ET.
         """
         
         return self.structured_llm.invoke([
